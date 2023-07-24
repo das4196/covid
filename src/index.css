@@ -1,0 +1,13 @@
+:root {
+  --font-size: 2.5rem;
+}
+
+html {
+  font-size: 62.56%;
+}
+
+@media (max-width: 480px) {
+  html {
+    font-size: 50%;
+  }
+}

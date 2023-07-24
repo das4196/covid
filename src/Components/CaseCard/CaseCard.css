@@ -1,0 +1,133 @@
+.parent-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.parent-container > * {
+  margin-top: 10px;
+}
+.card-container {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+.card-container ul {
+  overflow-y: scroll;
+  height: 15rem;
+  overflow-x: hidden;
+}
+.card-body {
+  margin: 0 0;
+}
+
+.spinners-text {
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  display: flex;
+  color: #e71809;
+}
+.spinners-text p {
+  margin-bottom: 0;
+  margin-left: 0.8rem;
+}
+.dropdown,
+#dropdownMenuButton1 {
+  width: 100%;
+}
+
+.card {
+  width: 15rem;
+  box-shadow: 0px 8px 10px 0px rgba(0, 0, 0, 0.2);
+  transition: all 0.2s;
+  text-align: center;
+  margin: 0 0;
+}
+
+.card-text {
+  color: aliceblue;
+  border-radius: 4px;
+  font-weight: 400;
+  padding-top: 0.2rem;
+  padding-bottom: 0.4rem;
+}
+#totalcard:hover,
+#recoveredcard:hover,
+#deathcard:hover {
+  width: 15rem;
+  box-shadow: 0px 8px 15px 0px rgba(0, 0, 0, 0.2);
+  transform: scale(1.03) translateY(5px);
+}
+
+#total {
+  background-color: gray;
+  text-align: center;
+}
+#recovered {
+  background-color: #378065;
+  text-align: center;
+}
+#active {
+  background-color: #e71809;
+  text-align: center;
+}
+#totalcard {
+  background-color: #ebecf0;
+}
+#recoveredcard {
+  background-color: #b3d9be;
+}
+#deathcard {
+  background-color: #ffd9d9;
+}
+.info-container {
+  margin-top: 2rem;
+  display: flex;
+  width: 100%;
+  border-top: 2px solid lightgrey;
+}
+.card-title-show-city {
+  margin-bottom: 2rem;
+  text-align: center;
+  font-size: 2rem;
+  padding-top: 2rem;
+}
+
+.button-container .btn:active,
+.button-container .btn:focus {
+  background-color: pink;
+}
+@media (max-width: 780px) {
+  .info-container {
+    flex-direction: column;
+  }
+}
+@media (max-width: 600px) {
+  .hometracker {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .card-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+  .city-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  @media (max-width: 480px) {
+    .card {
+      width: 50%;
+    }
+  }
+}

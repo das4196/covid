@@ -1,0 +1,43 @@
+.navbar {
+  background-color: #ddd;
+  border: none;
+  color: black;
+  padding: 1.6rem 3.2rem;
+  text-align: center;
+  margin: 4px 2px;
+  transition: 0.3s;
+}
+.navbar:hover {
+  background-color: #3e8e41;
+  color: white;
+}
+#navbutton {
+  text-transform: capitalize;
+  color: black;
+  font-size: 1.5rem;
+  text-decoration: none;
+  cursor: pointer;
+  position: relative;
+}
+#navbutton::before {
+  content: "";
+  position: absolute;
+  top: 90%;
+  left: 0;
+  height: 3px;
+  width: 0px;
+  background-color: rgb(0, 0, 121);
+  transition: transform 0.2s, width 0.4s cubic-bezier(1, 0, 0, 1) 0.2s;
+}
+.navbar-brand {
+  font-size: 2.5rem;
+  display: flex;
+  background-color: lightgrey;
+  padding: 0 1rem;
+  border-radius: 4px;
+}
+
+#navbutton:hover::before {
+  transform: scaleY(1);
+  width: 100%;
+}

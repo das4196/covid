@@ -1,0 +1,44 @@
+.graph-container {
+  padding: 2rem 2rem;
+  width: 55%;
+}
+.card-dates {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  border-style: solid;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  height: 2rem;
+  width: 100%;
+  margin: 0.5rem 0.5rem;
+  font-size: 1.2rem;
+}
+.graph-btn {
+  position: relative;
+}
+.graph-btn::before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  height: 3px;
+  width: 0px;
+  transform: scale(0);
+  background-color: blue;
+  transition: transform 0.2s, width 0.4s cubic-bezier(1, 0, 0, 1) 0.2s;
+}
+
+.graph-btn:hover::before {
+  transform: scaleY(1);
+  width: 100%;
+}
+@media (max-width: 780px) {
+  .graph-container {
+    width: 100%;
+  }
+}

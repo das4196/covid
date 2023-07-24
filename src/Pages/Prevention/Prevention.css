@@ -1,0 +1,46 @@
+.main-container-prevention {
+  height: 75vh;
+  overflow: scroll;
+}
+.header-covid {
+  margin-left: 3%;
+  margin-top: 3%;
+}
+.covid-text-video-container {
+  display: flex;
+  margin-left: 3%;
+  margin-right: 3%;
+  margin-top: 2rem;
+  text-align: justify;
+  font-size: 1.5rem;
+}
+.text-covid {
+  text-align: center;
+  margin-right: 2rem;
+}
+.frame {
+  margin-left: 3%;
+  margin-right: 3%;
+  margin-top: 1rem;
+}
+.navigation-link {
+  margin-left: 3%;
+}
+
+/* Responsiveness section */
+
+@media (max-width: 780px) {
+  .covid-text-video-container {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .main-container {
+    height: 85vh;
+  }
+  @media (max-width: 480px) {
+    .covid-text-video-container p {
+      padding: 2rem 1rem;
+      font-size: 1.2rem;
+    }
+  }
+}

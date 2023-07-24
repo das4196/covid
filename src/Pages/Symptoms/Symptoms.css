@@ -1,0 +1,26 @@
+.main-container-symptoms {
+  height: 75vh;
+  font-size: 1.5rem;
+}
+
+.header-symptoms {
+  display: flex;
+  margin-left: 3%;
+  margin-right: 3%;
+  margin-top: 2rem;
+  text-align: justify;
+}
+.text-covd {
+  margin: 2% 3%;
+}
+
+.symptoms-list {
+  margin: 2rem 2rem;
+}
+.list-symptoms-item {
+  margin: 0.2rem 2%;
+}
+.symptoms-conclusion {
+  margin: 2rem 2rem;
+  text-align: justify;
+}

@@ -1,0 +1,23 @@
+.about-container {
+  height: 75vh;
+}
+.card-texts {
+  padding-left: 10rem;
+  padding-right: 10rem;
+  font-size: 1.5rem;
+}
+.card-titles {
+  margin-bottom: 2rem;
+  text-align: center;
+  font-size: 2rem;
+  padding-top: 2rem;
+}
+
+/* Responsiveness */
+
+@media (max-width: 700px) {
+  .card-texts {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
